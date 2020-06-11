@@ -1,2 +1,2 @@
-# sardana-zhiCounterTimerController
-Sardana CounterTimer Controller für ZürichInstruments BoxCar Integrator
+# sardana-ZhiCounterTimerController
+Sardana CounterTimer Controller for ZuerichInstruments BoxCar Integrator

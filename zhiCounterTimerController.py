@@ -99,7 +99,7 @@ class boxcars:
         del self.daq
         
 
-class zhiCounterTimerController(CounterTimerController):
+class ZhiCounterTimerController(CounterTimerController):
     """The most basic controller intended from demonstration purposes only.
     This is the absolute minimum you have to implement to set a proper counter
     controller able to get a counter value, get a counter state and do an
