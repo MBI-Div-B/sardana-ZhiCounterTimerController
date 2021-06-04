@@ -124,13 +124,13 @@ class ZhiCounterTimerController(CounterTimerController):
 
     def __init__(self, inst, props, *args, **kwargs):
         """Constructor"""
-        super(zhiCounterTimerController,
+        super(ZhiCounterTimerController,
               self).__init__(inst, props, *args, **kwargs)
-        print 'ZI Boxcar Initialization ...',
+        print ('ZI Boxcar Initialization ...')
         self.zhi = boxcars(self.IP, self.port, api_level=6, device=self.device,
                            iface=self.iface, settings=self.settings,
                            repRate=self.repRate, timeOut=self.timeOut)
-        print 'SUCCESS for device %s connected to dataserver %s:%d with settings %s' % (self.device, self.IP, self.port, self.settings)
+        print ('SUCCESS for device %s connected to dataserver %s:%d with settings %s' % (self.device, self.IP, self.port, self.settings))
         self.data = []
         self.isAquiring = False
 
@@ -157,7 +157,7 @@ class ZhiCounterTimerController(CounterTimerController):
     def StartAll(self):
         pass
     
-    def LoadOne(self, axis, value, repetitions):
+    def LoadOne(self, axis, value, repetitions, latency):
         pass
 
     def StopOne(self, axis):
